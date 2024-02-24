@@ -1,0 +1,41 @@
+.error-page {
+    background-color: #1a1a1a;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.error-page h1 {
+    margin: 1rem 0;
+    color: white;
+}
+
+.error-page p {
+    margin: 0.5rem 0;
+    color: #f84949;
+    text-align: left; 
+}
+
+.error-page img {
+    margin: 1rem 0;
+}
+
+.error-page button {
+    background-color: transparent;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    outline: 3px solid white;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.error-page button:hover {
+    color: #ffffffcc;
+    outline: 3px solid #ffffffcc;
+}
