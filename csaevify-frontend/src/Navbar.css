@@ -1,0 +1,85 @@
+.navbar {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 11vh;
+    text-align: center;
+}
+
+.navbar-first {
+    width: 33vw;
+    color: #dddddd;
+}
+
+.navbar-second {
+    width: 34vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navbar-second .link {
+    color: #aeaeae;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar-second .link:hover {
+    color: #dddddd;
+}
+
+.navbar-third {
+    width: 33vw;
+}
+
+.navbar-third button {
+    background-color: transparent;
+    border: none;
+    outline: 2px solid white;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    /* border-radius: 0.5rem; */
+    cursor: pointer;
+}
+
+.navbar-third button:hover {
+    color: #aeaeaecc;
+    outline: 2px solid #aeaeaecc;
+}
+
+.navbar-mobile {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+.navbar-mobile .mobile-links {
+    display: none;
+}
+
+.navbar-mobile a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.navbar-mobile a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.navbar-mobile a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
