@@ -15,6 +15,7 @@ const MusicCard = () => {
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const kakaRef = useRef<HTMLAudioElement | null>(null);
+  
 
   function toggleAudio(): void {
     if (kakaRef.current) {
@@ -81,18 +82,6 @@ const MusicCard = () => {
   return (
     <>
       <div className="music-card">
-        <div className="volumebar-container">
-          <div className="volumebar">
-            <input
-              type="range"
-              className="volumebar"
-              min={0}
-              max={MAX}
-              onChange={handleVolume}
-            />
-            <p className="currentVolume">{currentVolume}</p>
-          </div>
-        </div>
         <p className="release">2024 · VULTURES 1</p>
         <img src={cover} alt="cover" className="cover" />
         <p className="title">Burn</p>
@@ -111,6 +100,22 @@ const MusicCard = () => {
         </div>
         <div className="play" onClick={toggleAudio}>
           {play ? <FaPause size={20} /> : <FaPlay size={20} />}
+        </div>
+        <div className="volumebar-container">
+          <div className="volumebar-q">
+            <div className="vb">
+              <input
+                type="range"
+                className="volumebar"
+                min={0}
+                max={MAX}
+                onChange={handleVolume}
+                style={{ background: `linear-gradient(90deg, purple 0%, orange ${(currentVolume / MAX) * 100}%, white ${(currentVolume / MAX) * 100}%, white 100%)` }}
+              />
+              <FaVolumeUp size={20}/>
+            </div>
+            <p className="currentVolume">{currentVolume}</p>
+          </div>
         </div>
         <div className="buttons-container">
           <div className="buttons">

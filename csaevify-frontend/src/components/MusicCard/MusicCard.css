@@ -1,50 +1,37 @@
 .music-card {
-    width: 20vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #0c0c0c;
-    position: relative; 
-    padding-bottom: 50px; 
+    padding: 1rem; 
+    box-sizing: border-box; 
+}
+
+.music-card .release{
+    margin: 1rem 0;
 }
 
 .music-card .cover {
-    width: 10rem;
-    margin: 3rem 0 2rem 0;
-}
- 
-.music-card .title {
-    margin: -1rem 0 0.3rem 0;
-    font-size: 4ch;
-}
- 
-.music-card .artist {
-    margin: 0 0 0.75rem 0;
-    font-size: 2ch;
-}
-
-.buttons-container {
-    position: absolute; 
-    bottom: 1rem; 
     width: 100%; 
+    margin: 1rem 0;
 }
 
-/**/
-
-.buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+.music-card .title {
+    font-size: 3.5ch; 
 }
 
+.music-card .artist {
+    margin: 0.25rem 0 1rem 0; 
+    font-size: 1.8ch; 
+}
 
 .slider input[type="range"] {
     -webkit-appearance: none;
     cursor: pointer;
-    width: 15rem;
-    height: 1rem;
+    width: 12rem;
+    height: 0.8rem;
     border-radius: 10px; 
     background: linear-gradient(90deg, purple, orange);
 }
@@ -55,8 +42,8 @@
 
 .slider input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 1.5rem; 
-    height: 1.5rem; 
+    width: 1.3rem; 
+    height: 1.3rem; 
     border-radius: 50%; 
     background: #E2E2E2; 
     cursor: pointer;
@@ -64,20 +51,9 @@
 
 .counter {
     text-align: center;
-    font-size: 1.5ch;
+    font-size: 1.7ch;
 }
 
-/**/
-
-.volumebar-container{
-    position: absolute;
-    bottom: 8rem;
-}
-
-.volumebar input[type="range"] {
-    cursor: pointer;
-    width: 10rem;
-}
 
 .currentVolume{
     text-align: center;
@@ -85,7 +61,7 @@
 
 .play {
     text-align: center;
-    margin: 1rem 0;
+    margin: 1rem 0; 
     padding: 0.5rem 1rem;
     border-radius: 40%;
     cursor: pointer;
@@ -96,14 +72,70 @@
     background: linear-gradient(90deg, purple, orange);
 }
 
+.volumebar-q input[type="range"] {
+    -webkit-appearance: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 40px;
+}
+
+.volumebar-q input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1.3rem; 
+    height: 1.3rem; 
+    border-radius: 100%; 
+    cursor: pointer;
+}
+
+.volumebar{
+    margin: 0 0.5rem ;
+}
+
+.vb{
+    display: flex;
+    align-items: center;
+}
+
 .audio-btn {
     cursor: pointer;
 }
 
-.buttons {
-    margin-top: 0vmax;
+.buttons{
+    position: absolute;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+    bottom: 0.5rem;
+}
+
+.shuffle{
+    position: absolute;
+    right: 7rem;
+    bottom: 0.5rem;
+}
+
+.loop{
+    position: absolute;
+    right: -1.2rem;
+    bottom: 0.2rem;
+}
+
+.like{
+    position: absolute;
+    left: 7rem;
+    bottom: 0.5rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .music-card .title {
+        font-size: 2ch; 
+    }
+
+    .music-card .artist {
+        font-size: 1ch; 
+    }
+
+    .play {
+        padding: 0.5rem; 
+    }
 }
