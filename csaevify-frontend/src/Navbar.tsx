@@ -1,8 +1,11 @@
+import { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import { isMobile } from "react-device-detect";
 
 const Navbar = () => {
+
+  const [isMobile, setMobile] = useState(false)
+
   return (
     <>
       {isMobile ? (
@@ -38,7 +41,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="navbar-third">
-            <button>Sign in</button>
+            <button onClick={() => {setMobile(false)}}>Sign in</button>
           </div>
         </div>
       )}
