@@ -8,12 +8,12 @@
 }
 
 .navbar-first {
-    width: 33vw;
+    width: 20vw;
     color: #dddddd;
 }
 
 .navbar-second {
-    width: 34vw;
+    width: 60vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -27,25 +27,6 @@
 
 .navbar-second .link:hover {
     color: #dddddd;
-}
-
-.navbar-third {
-    width: 33vw;
-}
-
-.navbar-third button {
-    background-color: transparent;
-    border: none;
-    outline: 2px solid white;
-    color: white;
-    padding: 0.5rem 1.5rem;
-    /* border-radius: 0.5rem; */
-    cursor: pointer;
-}
-
-.navbar-third button:hover {
-    color: #aeaeaecc;
-    outline: 2px solid #aeaeaecc;
 }
 
 .navbar-mobile {
