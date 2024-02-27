@@ -25,6 +25,15 @@
 .music-card .artist {
     margin: 0.25rem 0 1rem 0; 
     font-size: 1.8ch; 
+    color: grey;
+    text-decoration: none; 
+    transition: color 0.2s; 
+    cursor: pointer;
+}
+
+.music-card .artist:hover{
+    color: white; 
+    text-decoration: underline; 
 }
 
 .slider input[type="range"] {
@@ -37,7 +46,7 @@
 }
 
 .slider input[type="range"]:active::-webkit-slider-thumb {
-    background-color: #19747E;
+    background-color: grey;
 }
 
 .slider input[type="range"]::-webkit-slider-thumb {
@@ -87,6 +96,15 @@
     cursor: pointer;
 }
 
+.volumeicon{
+    cursor: pointer;
+}
+
+.volumeicon:hover{
+    fill: white;
+    transition: 1s ease;
+}
+
 .volumebar{
     margin: 0 0.5rem ;
 }
@@ -119,11 +137,16 @@
     bottom: 0.2rem;
 }
 
+.loop:hover{
+    fill: white;
+}
+
 .like{
     position: absolute;
     left: 7rem;
     bottom: 0.5rem;
 }
+
 
 
 @media screen and (max-width: 768px) {
