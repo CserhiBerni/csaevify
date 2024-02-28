@@ -147,18 +147,134 @@
     bottom: 0.5rem;
 }
 
-
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1580px){
     .music-card .title {
-        font-size: 2ch; 
+        font-size: 2.5ch; 
     }
-
+    
     .music-card .artist {
-        font-size: 1ch; 
+        font-size: 1.8ch; 
     }
 
-    .play {
-        padding: 0.5rem; 
+    .music-card .release{
+        font-size: 1.5ch;
     }
+
+    .slider input[type="range"] {
+        width: 14rem;
+        height: 0.8rem;
+        margin-left: 0.2rem;
+    }
+    
+    .slider input[type="range"]::-webkit-slider-thumb {
+        width: 1.3rem; 
+        height: 1.3rem; 
+    }
+
+    .volumebar-q input[type="range"] {
+        -webkit-appearance: none;
+        cursor: pointer;
+        width: 50%;
+        border-radius: 40px;
+        margin-left: 3rem;
+    }
+    
+    .volumebar-q input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 1.3rem; 
+        height: 0.5rem; 
+        border-radius: 100%; 
+        cursor: pointer;
+    }
+
+    .currentVolume{
+        text-align: center;
+        margin-left: 4.7rem;
+    }
+
+    .shuffle{
+        bottom: 0rem;
+    }
+    
+    .loop{
+        left: -0.9rem;
+        bottom: -0.3rem;
+    }
+
+    .like{
+        bottom: 0rem;
+    }
+    
+}
+
+@media screen and (max-width: 1400px){
+    .music-card {
+        width: 20%;
+        height: 40.1rem;
+    }
+
+    .music-card .release{
+        font-size: 1.3ch;
+    }
+
+    .music-card .title {
+        font-size: 2.5ch; 
+    }
+    
+    .music-card .artist {
+        font-size: 1.4ch; 
+        margin: 0.25rem 0 0.5rem 0; 
+    }
+
+    .slider input[type="range"] {
+        width: 10rem;
+        height: 0.5rem;
+        margin-left: 1.5rem;
+    }
+    
+    .slider input[type="range"]::-webkit-slider-thumb {
+        width: 0.8rem; 
+        height: 0.8rem; 
+    }
+
+    .volumebar-q input[type="range"] {
+        -webkit-appearance: none;
+        cursor: pointer;
+        width: 40%;
+        border-radius: 40px;
+        margin-left: 4rem;
+    }
+    
+    .volumebar-q input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 1.3rem; 
+        height: 0.4rem; 
+        border-radius: 100%; 
+        cursor: pointer;
+    }
+    
+    .counter {
+        text-align: center;
+        font-size: 1.3ch;
+    }
+
+    .buttons{
+        bottom: 15rem;
+    }
+    
+    .shuffle{
+        right: 5rem;
+        bottom: -14.7rem;
+    }
+    
+    .loop{
+        right: -1rem;
+        bottom: -15rem;
+    }
+
+    .like{
+        left: 5rem;
+        bottom: -14.7rem;
+    }
+    
 }

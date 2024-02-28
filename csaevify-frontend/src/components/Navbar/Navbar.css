@@ -69,3 +69,15 @@
     width: 6rem;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1580px){
+    .csaevifyicon{
+        width: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 1700px){
+    .csaevifyicon{
+        width: 5rem;
+    }
+}

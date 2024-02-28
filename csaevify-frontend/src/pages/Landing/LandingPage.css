@@ -30,7 +30,7 @@ p{
 
 .info{
     font-size: 8ch;
-    margin: 2rem 50rem 0 51rem;
+    margin: 2rem 50rem 0 45rem;
     width: 1rem;
     height: 1rem;
     opacity: 40%;
@@ -41,9 +41,147 @@ p{
     font-size: 2ch;
     font-style: italic;
     top: 0.15rem;
-    left: 50.5rem;
+    left: 45rem;
     width: 20rem;
     height: 0rem;
     opacity: 40%;
 }
- 
+
+@media screen and (min-width: 2000px) {
+    .main-section {
+        position: absolute;
+        width: 80vw;
+        height: 89.1vh;
+        background: linear-gradient(50deg, rgb(56, 0, 56, 0.8), rgb(100, 63, 0.8));
+        color: white;
+        top: 7.3rem;
+    }
+
+}
+
+@media screen and (max-width: 1800px) {
+    .main-section {
+        position: absolute;
+        width: 80vw;
+        height: 89vh;
+        background: linear-gradient(50deg, rgb(56, 0, 56, 0.8), rgb(100, 63, 0.8));
+        color: white;
+        top: 6rem;
+    }
+
+    h1{
+        margin: 3rem 20rem 2rem 5rem; 
+        font-size: 10ch;
+        letter-spacing: 5px;
+    }
+    
+    p{
+        font-size: 2.4ch;
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+
+    .info{
+        font-size: 8ch;
+        margin: 1.3rem 50rem 0 42.5rem;
+        width: 1rem;
+        height: 1rem;
+        opacity: 40%;
+    }
+
+    .info-text{
+        position: relative;
+        font-size: 2ch;
+        font-style: italic;
+        top: 0.3rem;
+        left: 42.5rem;
+        width: 20rem;
+        height: 0rem;
+        opacity: 40%;
+    }
+}
+
+
+@media screen and (max-width: 1600px) {
+    .main-section {
+        position: absolute;
+        width: 80vw;
+        height: 89vh;
+        background: linear-gradient(50deg, rgb(56, 0, 56, 0.8), rgb(100, 63, 0.8));
+        color: white;
+        top: 5.3rem;
+    }
+
+    h1{
+        margin: 3rem 20rem 2rem 5rem; 
+        font-size: 10ch;
+        letter-spacing: 5px;
+    }
+    
+    p{
+        font-size: 2ch;
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+
+    .info{
+        font-size: 6ch;
+        margin: 1.3rem 50rem 0 38.5rem;
+        width: 1rem;
+        height: 1rem;
+        opacity: 40%;
+    }
+
+    .info-text{
+        position: relative;
+        font-size: 2ch;
+        font-style: italic;
+        top: -0.1rem;
+        left: 37rem;
+        width: 20rem;
+        height: 0rem;
+        opacity: 40%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .main-section {
+        position: absolute;
+        width: 80vw;
+        height: 89vh;
+        background: linear-gradient(50deg, rgb(56, 0, 56, 0.8), rgb(100, 63, 0.8));
+        color: white;
+        top: 4.4rem;
+    }
+
+    h1{
+        margin: 3rem 20rem 2rem 5rem; 
+        font-size: 7ch;
+        letter-spacing: 5px;
+    }
+    
+    p{
+        font-size: 1.7ch;
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+
+    .info{
+        font-size: 5ch;
+        margin: 0.5rem 50rem 0 32.5rem;
+        width: 1rem;
+        height: 1rem;
+        opacity: 40%;
+    }
+
+    .info-text{
+        position: relative;
+        font-size: 2ch;
+        font-style: italic;
+        top: -0.25rem;
+        left: 30.5rem;
+        width: 20rem;
+        height: 0rem;
+        opacity: 40%;
+    }
+}
