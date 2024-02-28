@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-first">
-        <img className="csaevifyicon" src={csaevify} alt="cseavifyicon" />
+        <img className="csaevifyicon" src={csaevify} alt="cseavifyicon"/>
       </div>
       <div className="navbar-second">
         <Link to={"/discover"} className="link">

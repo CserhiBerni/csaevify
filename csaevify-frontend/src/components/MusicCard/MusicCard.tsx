@@ -1,5 +1,5 @@
 import "./MusicCard.css";
-import cover from '../../images/kaka.jpeg'
+import cover from '../../images/vultures.jpeg'
 import audio from '../../audios/listening.mp3'
 import { FaPlay, FaPause, FaHeart, FaVolumeUp } from "react-icons/fa";
 import { FaShuffle } from "react-icons/fa6";
@@ -15,7 +15,7 @@ const MusicCard = () => {
   const [showVolumeControls, setShowVolumeControls] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const kakaRef = useRef<HTMLAudioElement | null>(null);
+  const musicref = useRef<HTMLAudioElement | null>(null);
 
   const toggleVolumeControls = () => {
     setShowVolumeControls(!showVolumeControls);
@@ -23,20 +23,20 @@ const MusicCard = () => {
   
 
   function toggleAudio(): void {
-    if (kakaRef.current) {
+    if (musicref.current) {
       if (play) {
-        kakaRef.current?.pause();
+        musicref.current?.pause();
         setPlay(false);
       } else {
-        void kakaRef.current?.play();
+        void musicref.current?.play();
         setPlay(true);
       }
     }
   }
 
   function toggleLoop(): void {
-    if (kakaRef.current) {
-      kakaRef.current.loop = !loop;
+    if (musicref.current) {
+      musicref.current.loop = !loop;
       setLoop(!loop);
     }
   }
@@ -45,35 +45,35 @@ const MusicCard = () => {
     const { value } = e.target;
     const volume = Number(value) / MAX;
     setCurrentVolume(Number(value));
-    if (kakaRef.current) {
-      kakaRef.current.volume = volume;
+    if (musicref.current) {
+      musicref.current.volume = volume;
     }
   }
 
   function handleTimeUpdate(): void {
-    if (kakaRef.current) {
-      setCurrentTime(kakaRef.current.currentTime);
+    if (musicref.current) {
+      setCurrentTime(musicref.current.currentTime);
     }
   }
 
   function handleSliderChange(e: React.ChangeEvent<HTMLInputElement>): void {
     const { value } = e.target;
     setCurrentTime(Number(value));
-    if (kakaRef.current) {
-      kakaRef.current.currentTime = Number(value);
+    if (musicref.current) {
+      musicref.current.currentTime = Number(value);
     }
   }
 
   useEffect(() => {
-    if (kakaRef.current) {
-      kakaRef.current.addEventListener("timeupdate", handleTimeUpdate);
-      kakaRef.current.addEventListener("loadedmetadata", () => {
-        setDuration(kakaRef.current!.duration);
+    if (musicref.current) {
+      musicref.current.addEventListener("timeupdate", handleTimeUpdate);
+      musicref.current.addEventListener("loadedmetadata", () => {
+        setDuration(musicref.current!.duration);
       });
     }
     return () => {
-      if (kakaRef.current) {
-        kakaRef.current.removeEventListener("timeupdate", handleTimeUpdate);
+      if (musicref.current) {
+        musicref.current.removeEventListener("timeupdate", handleTimeUpdate);
       }
     };
   }, []);
@@ -130,7 +130,7 @@ const MusicCard = () => {
           </div>
         </div>
       </div>
-      <audio ref={kakaRef} src={audio} />
+      <audio ref={musicref} src={audio} />
     </>
   );
 };

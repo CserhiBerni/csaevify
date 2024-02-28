@@ -39,7 +39,7 @@
 .slider input[type="range"] {
     -webkit-appearance: none;
     cursor: pointer;
-    width: 12rem;
+    width: 15rem;
     height: 0.8rem;
     border-radius: 10px; 
     background: linear-gradient(90deg, purple, orange);
