@@ -1,12 +1,13 @@
 import "./Navbar.css";
 import csaevify from '../../images/csaevifywhite.svg';
 import { Link } from "react-router-dom";
+import { FaSearch } from "react-icons/fa";
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-first">
-        <img className="csaevifyicon" src={csaevify} alt="cseavifyicon"/>
+        <img src={csaevify} alt="cseavifyicon"/>
       </div>
       <div className="navbar-second">
         <Link to={"/discover"} className="link">
@@ -18,6 +19,12 @@ const Navbar = () => {
         <Link to={"/contact"} className="link">
           Contact Us
         </Link>
+      </div>
+      <div className="navbar-third">
+        <div className="search-bar">
+          <FaSearch className="search-icon" fill={"white"} />
+          <input type="text" name="search" id="search" />
+        </div>
       </div>
     </div>
   );

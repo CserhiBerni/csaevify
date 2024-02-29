@@ -8,15 +8,23 @@
 }
 
 .navbar-first {
-    width: 20vw;
+    width: 25vw;
     color: #dddddd;
 }
 
+.navbar-first img {
+    height: 9vh;
+}
+
 .navbar-second {
-    width: 60vw;
+    width: 55vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.navbar-third {
+    width: 20vw;
 }
 
 .navbar-second .link {
@@ -29,55 +37,26 @@
     color: #dddddd;
 }
 
-.navbar-mobile {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
+.navbar-third {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.navbar-mobile .mobile-links {
-    display: none;
+.navbar-third .search-bar {
+    background-color: #292929;
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.navbar-mobile a {
+.search-bar input {
+    background-color: transparent;
+    outline: none;
+    border: none;
     color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-}
-
-.navbar-mobile a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.navbar-mobile a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.active {
-    background-color: #04AA6D;
-    color: white;
-}
-
-.csaevifyicon{
-    width: 6rem;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 1580px){
-    .csaevifyicon{
-        width: 3.5rem;
-    }
-}
-
-@media screen and (max-width: 1700px){
-    .csaevifyicon{
-        width: 5rem;
-    }
+    margin-left: 0.5rem;
 }

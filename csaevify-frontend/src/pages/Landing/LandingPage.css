@@ -1,21 +1,21 @@
 .landing-page {
     height: 100vh;
     background-color: #E2E2E2;
-    color:  white;
-    display: flex;
-    flex-direction: row;
-    position: relative;
 }
 
-.main-section {
-    position: absolute;
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+ .main-section {
     width: 80vw;
     height: 89vh;
     background: linear-gradient(50deg, rgb(56, 0, 56, 0.8), rgb(100, 63, 0.8));
     color: white;
-    top: 6.6rem;
 }
 
+/*
 h1{
     margin: 5rem 20rem 2rem 5rem; 
     font-size: 10ch;
@@ -184,4 +184,4 @@ p{
         height: 0rem;
         opacity: 40%;
     }
-}
+} */

@@ -1,0 +1,121 @@
+.music-card {
+    width: 20vw;
+    height: 89vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 1rem; 
+    box-sizing: border-box; 
+}
+
+.music-card .release{
+    margin: 1rem 0;
+}
+
+.music-card .cover {
+    width: 100%; 
+    margin: 1rem 0;
+}
+
+.music-card .title {
+    font-size: 3.5ch; 
+}
+
+.music-card .artist {
+    margin: 0.25rem 0 1rem 0; 
+    font-size: 1.8ch; 
+    color: grey;
+    text-decoration: none; 
+    transition: color 0.2s; 
+    cursor: pointer;
+}
+
+.music-card .artist:hover{
+    color: white; 
+    text-decoration: underline; 
+}
+
+.slider input[type="range"] {
+    -webkit-appearance: none;
+    cursor: pointer;
+    width: 15rem;
+    height: 0.8rem;
+    border-radius: 10px; 
+    background: linear-gradient(90deg, purple, orange);
+}
+
+.slider input[type="range"]:active::-webkit-slider-thumb {
+    background-color: grey;
+}
+
+.slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1.3rem; 
+    height: 1.3rem; 
+    border-radius: 50%; 
+    background: #E2E2E2; 
+    cursor: pointer;
+}
+
+.counter {
+    text-align: center;
+    font-size: 1.7ch;
+}
+
+
+.currentVolume{
+    text-align: center;
+}
+
+.play {
+    text-align: center;
+    margin: 1rem 0; 
+    padding: 0.5rem 1rem;
+    border-radius: 40%;
+    cursor: pointer;
+    border: none;
+}
+
+.play:hover {
+    background: linear-gradient(90deg, purple, orange);
+}
+
+.volumebar-q input[type="range"] {
+    -webkit-appearance: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 40px;
+}
+
+.volumebar-q input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1.3rem; 
+    height: 1.3rem; 
+    border-radius: 100%; 
+    cursor: pointer;
+}
+
+.volumeicon{
+    cursor: pointer;
+}
+
+.volumeicon:hover{
+    fill: white;
+    transition: 1s ease;
+}
+
+.volumebar{
+    margin: 0 0.5rem ;
+}
+
+.vb{
+    display: flex;
+    align-items: center;
+}
+
+.audio-btn {
+    cursor: pointer;
+}
