@@ -21,12 +21,12 @@
 }
 
 .music-card .title {
-    font-size: 3.5ch; 
+    font-size: 3ch; 
 }
 
 .music-card .artist {
     margin: 0.25rem 0 1rem 0; 
-    font-size: 1.8ch; 
+    font-size: 1.5ch; 
     color: grey;
     text-decoration: none; 
     transition: color 0.2s; 
@@ -86,14 +86,15 @@
 .volumebar-q input[type="range"] {
     -webkit-appearance: none;
     cursor: pointer;
-    width: 100%;
+    width: 70%;
     border-radius: 40px;
+    margin-left: 1.3rem;
 }
 
 .volumebar-q input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 1.3rem; 
-    height: 1.3rem; 
+    height: 0.8rem; 
     border-radius: 100%; 
     cursor: pointer;
 }
@@ -118,4 +119,12 @@
 
 .audio-btn {
     cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+    margin: 2rem 0rem -1rem ;
 }

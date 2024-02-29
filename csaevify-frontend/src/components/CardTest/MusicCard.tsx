@@ -1,13 +1,17 @@
 import "./MusicCard.css";
 import cover from '../../images/vultures.jpeg'
 import audio from '../../audios/listening.mp3'
-import { FaPlay, FaPause, FaVolumeUp } from "react-icons/fa";
+import { FaPlay, FaPause, FaHeart, FaVolumeUp } from "react-icons/fa";
+import { FaShuffle } from "react-icons/fa6";
+import { TiArrowLoop } from "react-icons/ti";
 import { useState, useRef, useEffect } from 'react';
+
 
 const MusicCard = () => {
   const MAX = 100;
 
   const [play, setPlay] = useState(false);
+  const [loop, setLoop] = useState(false);
   const [currentVolume, setCurrentVolume] = useState(MAX);
   const [showVolumeControls, setShowVolumeControls] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
@@ -27,6 +31,13 @@ const MusicCard = () => {
         void musicref.current?.play();
         setPlay(true);
       }
+    }
+  }
+
+  function toggleLoop(): void {
+    if (musicref.current) {
+      musicref.current.loop = !loop;
+      setLoop(!loop);
     }
   }
 
@@ -122,6 +133,25 @@ const MusicCard = () => {
             {showVolumeControls && (
               <p className="currentVolume">{currentVolume}</p>
             )}
+          </div>
+        </div>
+        <div className="buttons">
+          <div className="shuffle audio-btn">
+            <FaShuffle size={20} color={"#D1E8E2"} />
+          </div>
+          <div className="loop audio-btn" onClick={toggleLoop}>
+            <TiArrowLoop size={30} style={{color: "white", background: loop ? "linear-gradient(90deg, purple, orange)" : "none", borderRadius: 15}} />
+          </div>
+          <div className="like audio-btn">
+            <svg width="20" height="20">
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stopColor="#800080" />
+                  <stop offset="100%" stopColor="#FFA500" />
+                </linearGradient>
+              </defs>
+              <FaHeart size={20} fill="url(#gradient)"/>
+            </svg>
           </div>
         </div>
       </div>
