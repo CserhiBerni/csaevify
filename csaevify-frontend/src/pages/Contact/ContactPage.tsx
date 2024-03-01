@@ -30,7 +30,7 @@ const ContactPage = () => {
                      </div>
                   <label className='message-label'>Message</label>
                      <div className='message-input'>
-                        <input type="text" className='messageInput' placeholder='What can we do for You?'/>
+                        <textarea className='messageInput' placeholder='What can we do for You?'/>
                      </div>
                   </div>
                </div>

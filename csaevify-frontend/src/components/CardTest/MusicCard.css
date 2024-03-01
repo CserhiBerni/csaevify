@@ -1,6 +1,6 @@
 .music-card {
     width: 20vw;
-    height: 89vh;
+    height: auto;
     color: white;
     display: flex;
     flex-direction: column;
