@@ -13,14 +13,13 @@
 
 h1{
    margin: 2rem 4rem 0rem 4rem;
-   font-size: 10ch;
+   font-size: 9ch;
    text-transform: uppercase;
-   font-style: italic;
 }
 
 .contact-quote{
-   margin: 0rem 4rem;
-   font-size: 4ch;
+   margin: 0rem 8rem;
+   font-size: 3ch;
    font-style: italic;
 }
 
@@ -35,9 +34,82 @@ h1{
 
 .first-part, .second-part{
    width: 50%;
-   padding: 2rem;
+   padding: 1rem;
 }
 
 .contact-us{
    font-size: 5ch;
+   margin-bottom: 2rem;
+}
+
+.contact-us-text{
+   padding-bottom: 1rem;
+   font-size: 3ch;
+}
+
+.second-part{
+   margin: 1rem;
+}
+
+.name-label{
+   display: block;
+   margin-bottom: 1rem;
+   opacity: 70%;
+   margin-left: 5rem;
+}
+
+.name-inputs{
+   flex-direction: row;
+   display: flex;
+   gap: 3rem;
+   margin-left: 5rem;
+   margin-bottom: 1rem;
+}
+
+.emailInput{
+   margin-left: 5rem;
+   width: 10rem;
+   height: 1.5rem;
+}
+
+.firstName{
+   width: 8rem;
+   height: 1.5rem;
+}
+
+.secondName{
+   width: 8rem;
+   height: 1.5rem;
+}
+
+.email-label{
+   display: block;
+   margin-bottom: 1rem;
+   opacity: 70%;
+   margin-left: 5rem;
+}
+
+.message-label{
+   display: block;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   opacity: 70%;
+   margin-left: 5rem;
+}
+
+.messageInput{
+   gap: 3rem;
+   margin-left: 5rem;
+   margin-bottom: 1rem;
+   height: 15rem;
+   width: 25rem;
+}
+
+.sendbtn{
+   margin-left: 40vw;
+   background: transparent;
+   color: white;
+   border-color: white;
+   font-size: 3ch;
+   border-radius: 20%;
 }

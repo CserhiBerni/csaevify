@@ -7,7 +7,9 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-first">
-        <img src={csaevify} alt="cseavifyicon"/>
+        <a href="http://localhost:5173/">
+          <img className="csaevifyicon" src={csaevify} alt="cseavifyicon"/>
+        </a>
       </div>
       <div className="navbar-second">
         <Link to={"/discover"} className="link">
