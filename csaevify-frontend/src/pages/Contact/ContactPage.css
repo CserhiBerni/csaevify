@@ -1,0 +1,43 @@
+
+
+.contact-container {
+   display: flex;
+   flex-direction: row;
+}
+
+.contact-main-section {
+   width: 80vw;
+   background: linear-gradient(50deg, rgb(56, 0, 56, 0.8), rgb(100, 63, 0.8));
+   color: white;
+}
+
+h1{
+   margin: 2rem 4rem 0rem 4rem;
+   font-size: 10ch;
+   text-transform: uppercase;
+   font-style: italic;
+}
+
+.contact-quote{
+   margin: 0rem 4rem;
+   font-size: 4ch;
+   font-style: italic;
+}
+
+.contact-us-section{
+   display: flex;
+   flex-direction: row;
+   border: 3px solid white;
+   border-radius: 10px;
+   margin: 2rem 4rem;
+   
+}
+
+.first-part, .second-part{
+   width: 50%;
+   padding: 2rem;
+}
+
+.contact-us{
+   font-size: 5ch;
+}
