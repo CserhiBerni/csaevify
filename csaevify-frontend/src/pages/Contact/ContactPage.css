@@ -9,6 +9,7 @@
    width: 80vw;
    background: linear-gradient(50deg, rgb(56, 0, 56, 0.8), rgb(100, 63, 0.8));
    color: white;
+   min-height: 89vh;
 }
 
 h1{

@@ -1,6 +1,13 @@
+.music-card-container{
+    width: 20vw;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .music-card {
     width: 20vw;
-    height: auto;
+    height: 44.7vw;
     color: white;
     display: flex;
     flex-direction: column;
@@ -8,15 +15,20 @@
     background-color: black;
     padding: 1rem; 
     box-sizing: border-box; 
+    position: fixed;
+}
+
+.music-card{
+    margin-left: auto;
 }
 
 .music-card .release{
-    margin: 1rem 0;
+    margin: 3rem;
 }
 
 .music-card .cover {
     width: 100%; 
-    margin: 1rem 0;
+    margin: -1rem 0rem 1rem 0rem;
 }
 
 .music-card .title {
@@ -125,5 +137,60 @@
     flex-direction: row;
     align-items: center;
     gap: 5rem;
-    margin: 2rem 0rem -1rem ;
+    margin: 3rem;
+}
+
+
+@media screen and (max-width: 1780px) {
+    .music-card .release{
+        font-size: 1.8ch;
+        margin: 1rem 0rem 1.5rem ;
+    }
+
+    .music-card .cover{
+        margin: 0.5rem;
+    }
+
+    .music-card .title{
+        font-size: 3ch;
+    }
+
+    .music-card .artist{
+        font-size: 2ch;
+    }
+}
+
+@media screen and (max-width: 1680px) {
+    .music-card .release{
+        font-size: 1.5ch;
+        margin: 0.3rem 0rem 1.5rem ;
+    }
+
+    .music-card .title{
+        font-size: 2.5ch;
+    }
+
+    .music-card .artist{
+        font-size: 1.5ch;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .music-card .release{
+        font-size: 1.3ch;
+        margin: 0.3rem 0rem 1.5rem ;
+    }
+
+    .music-card .cover{
+        margin: -1rem 0rem 0rem 0rem;
+    }
+
+    .music-card .title{
+        font-size: 2.3ch;
+    }
+
+    .music-card .artist{
+        font-size: 1.2ch;
+    }
+
 }

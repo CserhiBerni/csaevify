@@ -1,3 +1,8 @@
+.navbar-container{
+    height: 11vh;
+    background-color: transparent;
+}
+
 .navbar {
     background-color: black;
     display: flex;
@@ -5,6 +10,7 @@
     align-items: center;
     height: 11vh;
     text-align: center;
+    position: fixed;
 }
 
 .navbar-first {

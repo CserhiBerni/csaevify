@@ -86,6 +86,7 @@ const MusicCard = () => {
 
   return (
     <>
+    <div className="music-card-container">
       <div className="music-card">
         <p className="release">2024 · VULTURES 1</p>
         <img src={cover} alt="cover" className="cover" />
@@ -156,6 +157,7 @@ const MusicCard = () => {
         </div>
       </div>
       <audio ref={musicref} src={audio} />
+    </div>
     </>
   );
 };

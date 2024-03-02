@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 const Navbar = () => {
   const navigate = useNavigate();
   return (
+    <div className="navbar-container">
     <div className="navbar">
       <div className="navbar-first">
         <img
@@ -34,6 +35,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
+  </div>
   );
 };
 
