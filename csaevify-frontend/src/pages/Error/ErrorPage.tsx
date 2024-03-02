@@ -19,7 +19,7 @@ const ErrorPage = () => {
       <h1>Nem várt hiba történt!</h1>
       <p>{error.data}</p>
       <img src={errorImage} alt="error-image" />
-      <button onClick={() => navigate(-1)}>Vissza</button>
+      <button onClick={() => navigate("/")}>Vissza</button>
     </div>
   );
 };

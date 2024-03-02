@@ -1,15 +1,20 @@
 import "./Navbar.css";
-import csaevify from '../../images/csaevifywhite.svg';
+import csaevify from "../../images/csaevifywhite.svg";
 import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <div className="navbar">
       <div className="navbar-first">
-        <a href="http://localhost:5173/">
-          <img className="csaevifyicon" src={csaevify} alt="cseavifyicon"/>
-        </a>
+        <img
+          className="csaevifyicon"
+          src={csaevify}
+          alt="cseavifyicon"
+          onClick={() => {navigate("/")}}
+        />
       </div>
       <div className="navbar-second">
         <Link to={"/discover"} className="link">
