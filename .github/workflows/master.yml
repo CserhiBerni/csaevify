@@ -30,8 +30,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Change Directory
-        run: cd ./csaevify-frontend
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
@@ -39,9 +37,13 @@ jobs:
           cache: 'npm'
           cache-dependency-path: "./csaevify-frontend/package-lock.json"
       - name: Install dependencies
-        run: npm install
+        run: | 
+          cd ./csaevify-frontend
+          npm install
       - name: Build
-        run: npm run build
+        run: | 
+          cd ./csaevify-frontend
+          npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
