@@ -1,6 +1,6 @@
 import "./MusicCard.css";
 import cover from '../../images/vultures.jpeg'
-import audio from '../../audios/listening.mp3'
+import audio from '../../audios/burn.mp3'
 import { FaPlay, FaPause, FaHeart, FaVolumeUp } from "react-icons/fa";
 import { FaShuffle } from "react-icons/fa6";
 import { TiArrowLoop } from "react-icons/ti";

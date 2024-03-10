@@ -5,9 +5,58 @@
 
  .main-section {
     width: 80vw;
-    min-height: 100vh;
+    min-height: 89vh;
     background: linear-gradient(50deg, rgb(56, 0, 56, 0.8), rgb(100, 63, 0.8));
     color: white;
+}
+
+.songs {
+    width: 70vw;
+    height: 80vh;
+    background-color: #dddddd30;
+    border-radius: 15px;
+    margin: 5vh 0 0 5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.song {
+    width: 20vw;
+    height: 70vh;
+    background-color: #11111180;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.song-cover {
+    width: 15vw;
+    border-radius: 15px;
+    margin-top: 2.5vw;
+    margin-bottom: 1vw;
+}
+
+.song-title {
+    font-weight: bold;
+}
+
+.song-play {
+    margin-top: 3vw;
+    background-color: black;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.song-play-icon {
+    margin-left: 35%;
 }
 
 /*
