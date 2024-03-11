@@ -45,7 +45,7 @@
 
 .song-play {
     margin-top: 3vw;
-    background-color: black;
+    background-color: #00000030;
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
@@ -53,6 +53,10 @@
     align-items: center;
     justify-self: center;
     cursor: pointer;
+}
+
+.song-play:hover{
+    background: linear-gradient(90deg, purple, orange);
 }
 
 .song-play-icon {
